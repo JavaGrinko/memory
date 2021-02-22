@@ -10,6 +10,7 @@ function init() {
     }
     function onCardClick(card) {
         if (openedCards.length >= 2) return;
+        if (openedCards.includes(card)) return;
         if (card.classList.contains('open')) {
             card.classList.remove('open');
         } else {
