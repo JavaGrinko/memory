@@ -16,7 +16,7 @@ body {
     transform-style: preserve-3d;
 }
 
-.game-field td:hover {
+.open {
     transform: rotateY(180deg);
 }
 
