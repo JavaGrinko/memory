@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
     height: 100%;
 }
@@ -10,6 +10,40 @@ body {
 .main-screen {
     width: 70%;
     position: relative;
+}
+
+.score-panel {
+    width: 10%;
+    height: 50%;
+    border-radius: 15px 0 0 15px;
+    background: url(images/wood.jpg);
+    border: 3px solid black;
+    border-width: 3px 0 3px 3px;
+    color: rgb(255, 208, 0);
+}
+
+.score-panel h2 {
+    margin: 8px;
+    border-bottom: 1px solid rgb(255, 208, 0);
+}
+
+.score-panel h1 {
+    text-align: center;
+    font-size: 70px;
+    text-shadow: #e55d5d 0 0 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-container {
@@ -69,4 +103,23 @@ body {
 
 .card-back img {
     width: 100%;
+}
+
+.square_btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*button color*/
+    border-bottom: solid 2px #d27d00;/*daker color*/
+    border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.square_btn:active {
+    border-bottom: solid 2px #fd9535;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
