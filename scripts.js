@@ -6,7 +6,6 @@ let cards;
 
 window.onload = function() {
     console.log("Скрипты подключены");
-    init();
     initUI();
 }
 
@@ -16,6 +15,7 @@ function initUI() {
     const timerTag = document.getElementById("timer");
     const scoreTag = document.getElementById("score");
     startButton.onclick = () => {
+        init();
         const container = document.getElementsByClassName("game-container")[0];
         container.style['background-image'] = "url(images/wood.jpg)";
         shuffleCards(cards);
